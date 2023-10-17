@@ -9,17 +9,6 @@ The code was taken from techbuilder's video but it has been hugely modified and 
  - Easy, capable and modifiable design.
  - Uses I2C ssd1306 based OLED.
 
-## V1.1 IMPROVEMENTS OVER ORIGIONAL CODE:
--> changed the display from 16x2 I2C LCD to 128x32 ssd1306 i2c oled 
-   display.
--> added sleep function(default: 5 minutes). iron switches to sleep mode 
-   when the set temp is 200+(default) and wakeTime variable times out.
--> fixed an issue with the display refresh rate dropping and program 
-   slowing down after ~30 seconds from startup(previousMillis variable
-   overflow). Now it slows down after ~50 days
--> general improvements in original code
--> added a Status LED to show iron status(default: on for running, fade for sleeping)
-
 ### Modifiable Parameters: 
  - minTemp (minimum temp to be acquired by the iron)
  - maxTemp (max temp that can be aquired by the iron)
@@ -61,4 +50,17 @@ Check the datasheet for your OLED, the code works only with ssd1306 I2C, if you 
 you must modify the code and use a different library.
 
 
+## V1.1 IMPROVEMENTS OVER ORIGIONAL CODE:
+Changed the display from 16x2 I2C LCD to 128x32 ssd1306 i2c oled 
+display.
 
+Added sleep function(default: 5 minutes). iron switches to sleep mode 
+when the set temp is 200+(default) and wakeTime variable times out.
+
+Fixed an issue with the display refresh rate dropping and program 
+slowing down after ~30 seconds from startup(previousMillis variable
+overflow). Now it slows down after ~50 days.
+
+General improvements in original code.
+
+Added a Status LED to show iron status(default: on for running, fade for sleeping).
