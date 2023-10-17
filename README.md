@@ -1,6 +1,6 @@
 # ArduinoSolderingIron
 ORIGINAL CODE BY TECHBUILDER. MODDED BY SYNCHRONOUS 
-This project is inspired by techbuilder's take on a hakko type soldering iron control circuit
+This project is inspired by techbuilder's take on a hakko type soldering iron control circuit.
 The code was taken from techbuilder's video but it has been hugely modified and improved. 
 
 ## Features: 
